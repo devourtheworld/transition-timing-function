@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+body{
+    font-family: Teko, sans-serif;
+}
+
+main{
+    border: 3px solid black;
+}
+
+.progress {
+    background: #333;
+    border: 2px solid #333;
+    height: 35px;
+    position: relative;
+    margin: 10px;
+}
+
+.progress:hover::before{
+    width: 100%;
+}
+
+.progress::before{
+    transition-timing-function: linear;
+    transition-duration: 5s;
+    content: '';
+    position: absolute;
+    height: 100%; width: 0;
+    background: #FFA600;
+}
+
+div p{
+    display: flex;
+    text-align: center;
+    color: white;
+    cursor: default;
+    display: flex;
+    position: absolute;
+    transition: 0.5s
+}
+
+.apple:hover::before{
+    width: 90%;
+}
+
+.microsoft::before{
+    transition-timing-function: steps(10, end);
+    transition-duration: 5s;
+    content: '';
+    position: absolute;
+    height: 100%; width: 0;
+    background: #FFA600;
+}
+
+.amazon::before{
+    transition-timing-function: ease;
+    transition-duration: 5s;
+    content: '';
+    position: absolute;
+    height: 100%; width: 0;
+    background: #FFA600;
+}
