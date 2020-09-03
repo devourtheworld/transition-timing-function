@@ -1,0 +1,1 @@
+took from - http://htmlbook.ru/css/transition-timing-function
